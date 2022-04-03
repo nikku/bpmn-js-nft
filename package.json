@@ -1,0 +1,40 @@
+{
+  "name": "bpmn-js-nft",
+  "version": "0.0.13",
+  "description": "The bpmn-js nft extension",
+  "private": true,
+  "scripts": {
+    "dev": "npm start",
+    "all": "run-s lint bundle",
+    "bundle": "NODE_ENV=production webpack",
+    "start": "webpack serve --open",
+    "lint": "eslint .",
+    "prepare": "npm run bundle"
+  },
+  "repository": "https://github.com/nikku/bpmn-js-nft.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@ibm/plex": "^6.0.0",
+    "bpmn-js": "^9.0.3",
+    "clsx": "^1.1.1",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.6.0",
+    "downloadjs": "^1.4.7",
+    "eslint": "^7.32.0",
+    "eslint-plugin-bpmn-io": "^0.12.0",
+    "file-drops": "^0.4.0",
+    "file-open": "^0.1.1",
+    "htm": "^3.1.0",
+    "min-dom": "^3.1.3",
+    "npm-run-all": "^4.1.2",
+    "preact": "^10.6.5",
+    "style-loader": "^3.3.1",
+    "tiny-svg": "^2.2.3",
+    "webpack": "^5.51.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}
